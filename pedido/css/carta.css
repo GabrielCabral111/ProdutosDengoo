@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #fffbe9 0%, #ead6f9 100%);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .card {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    color: white;
+    max-width: 550px;
+    width: 90%;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .botao {
+    background-color: #8000ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+  }
+  
+  .botao:hover {
+    background-color: #5e00c2;
+    transform: scale(1.05);
+  }

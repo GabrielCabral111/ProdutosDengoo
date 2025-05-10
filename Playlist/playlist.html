@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Produto dengoo</title>
+    <!-- Importa o CSS do Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Importa o Font Awesome para os ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pN5x9m8U6OlhPkC8O9ZgvckQqed8aLzBxby91mqbVPvFa3xFVhHkV3u0b2u0icqUl5b8+4N3avK5xyhybYoz1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importa o CSS customizado -->
+    <link rel="stylesheet" href="playlist.css" />
+  </head>
+  <section id="music">
+    <div id="main">
+      <div class="content">
+        <div class="slider-playlist">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="../fotos/ilo.png"
+                  alt="Syn Cole"  class="k"/>
+                <h1 class="n">I Love, I Love</h1>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../fotos/revela.png"
+                  alt="Clarx & Harddope" class="k" />
+                <h1 class="n">Essência Da Paixão</h1>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../fotos/bk.png"
+                  alt="Neffex"  class="k"/>
+                <h1 class="n">Planos</h1>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../fotos/djonga.png"
+                  alt="Patrick Patrikios" class="k" />
+                <h1 class="n">MELHOR QUE ONTEM</h1>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../fotos/dela.png"
+                  alt="Besomorph & Coopex"  class="k"/>
+                <h1 class="n">Sunshine</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="playlist">
+            <div class="playlist-item">
+              <img
+                src="../fotos/ilo.png"
+                alt="Syn Cole"  class="k"/>
+              <div class="song">
+                <p class="m">Malcolm Todd - Chest Pain</p>
+                <p class="m">Malcolm Todd</p>
+              </div>
+              <p class="m">3:49</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="../fotos/revela.png"
+                alt="Clarx & Harddope"  class="k"/>
+              <div class="song">
+                <p class="m">Grupo Revelação - Essência Da Paixão</p>
+                <p class="m">Grupo Revelação</p>
+              </div>
+              <p class="m">2:38</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="../fotos/bk.png"
+                alt="Neffex"  class="k"/>
+              <div class="song">
+                <p class="m">BK' - Planos part. Luccas Carlos</p>
+                <p class="m">BK</p>
+              </div>
+              <p class="m">3:39</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="../fotos/djonga.png"
+                alt="Patrick Patrikios" class="k" />
+              <div class="song">
+                <p class="m">DJONGA - MELHOR QUE ONTEM</p>
+                <p class="m">Know Myself</p>
+              </div>
+              <p class="m">3:23</p>
+              <i class="fa-solid fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="../fotos/dela.png"
+                alt="Besomorph & Coopex"  class="k"/>
+              <div class="song">
+                <p class="m">Delacruz - Sunshine</p>
+                <p class="m">Delacruz</p>
+              </div>
+              <p class="m">2:37</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="player">
+          <!-- Note que o src do áudio agora é o primeiro item do array -->
+          <audio
+            id="audioPlayer"
+            src="./Iframe Pequeno Cidadão - O Sol e a Lua [HbIC6c3p3Qo].mp3"
+            type="audio/mpeg">
+          </audio>
+          <div class="controls">
+            <i class="fa-solid fa-shuffle" id="shuffleBtn"></i>
+            <i class="fa-solid fa-backward" id="prevBtn"></i>
+            <button id="playPauseBtn">
+              <i class="fa-solid fa-play" id="playPauseIcon"></i>
+            </button>
+            <i class="fa-solid fa-forward" id="nextBtn"></i>
+            <div class="volume">
+              <i class="fa-solid fa-volume-high"></i>
+              <input
+                type="range"
+                id="volume-range"
+                min="0"
+                max="100"
+                value="100" />
+            </div>
+          </div>
+          <input type="range" value="0" id="progress-bar" />
+        </div>
+      </div>
+    </div>
+    <!-- Importa o JS do Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Importa o JavaScript customizado -->
+    <script src="music.js"></script>
+  </section>
+</html>

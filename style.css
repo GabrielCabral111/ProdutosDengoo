@@ -1,0 +1,63 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    gap: 20px;               /* Espaçamento entre os botões */
+    padding: 20px;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  /* Cores diferentes */
+  .red {
+    background-color: #e74c3c;
+  }
+  
+  .green {
+    background-color: #2ecc71;
+  }
+  
+  .blue {
+    background-color: #3498db;
+  }
+  .purple{
+    background-color: #bc34db;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsivo extra para telas muito pequenas */
+  @media (max-width: 400px) {
+    .btn {
+      font-size: 14px;
+      padding: 12px 24px;
+    }
+  }
+  
