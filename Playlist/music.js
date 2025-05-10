@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let isSongLoaded = false;
   
     const songs = [
-      "../music/Malcolm.mp3",
+      "../music/Jm.mp3",
       "../music/GrupoRevelação.mp3",
-      "../music/BK.mp3",
+      "../music/afrodite.mp3",
       "../music/DJONGA.mp3",
       "../music/Delacruz.mp3",
     ];
